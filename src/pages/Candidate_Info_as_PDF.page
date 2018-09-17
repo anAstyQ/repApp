@@ -1,0 +1,199 @@
+<apex:page renderAs="pdf" controller="candidateController" >
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+	
+	<title>Candidate record</title>
+	<meta name="generator" content="LibreOffice 6.0.3.2 (Windows)"/>
+	<meta name="created" content="2018-09-14T10:51:14.503000000"/>
+	<meta name="changed" content="2018-09-14T11:03:58.410000000"/>
+	<style type="text/css">
+		@page { margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115% }
+		td p { margin-bottom: 0in }
+		h1 { margin-bottom: 0.08in }
+		h1.western { font-family: "Liberation Serif", serif }
+		h1.cjk { font-family: "SimSun"; font-size: 24pt }
+		h1.ctl { font-family: "Mangal"; font-size: 24pt }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<!--wrote-->
+<body lang="en-US" dir="ltr">
+<table width="100%" cellpadding="4" cellspacing="0">
+	<colgroup><col width="321"/>
+	<col width="326" />
+	</colgroup><tbody><tr valign="top">
+		<td width="30%" height="146" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.2in; padding-bottom: 1in; padding-left: 0.04in; padding-right: 0in">
+			<p><font size="7" style="font-size: 45pt">PHOTO</font></p>
+		</td>
+		<td width="70%" style="border: 1px solid #000000; padding: 0.04in">
+			<p style="margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#3e3e3c"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Candidate</font></font></font></p>
+			<h1 class="western" style="margin-top: 0in; margin-bottom: 0in; border: none; padding: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; orphans: 2; widows: 2">
+			<font color="#3e3e3c"><font face="Salesforce Sans, Arial, sans-serif"><b>{!cand.Name}</b></font></font></h1>
+			
+		</td>
+	</tr>
+</tbody></table>
+
+<p><br/><br/></p>
+
+<table width="100%" cellpadding="4" cellspacing="0">
+	<colgroup><col width="256*"/>
+	</colgroup><tbody><tr>
+		<td width="100%" height="20" valign="top" style="border: 1px solid #000000; padding: 0.04in">
+			<p><font size="4" style="font-size: 16pt">Contact Information</font></p>
+		</td>
+	</tr>
+</tbody></table>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<colgroup><col width="128*"/>
+	<col width="128*"/>
+	</colgroup><tbody><tr valign="top">
+		<td width="50%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Legacy
+			Candidate Number</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.Legacy_Candidate_Number__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+		<td width="50%" style="border: 1px solid #000000; padding: 0.04in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Street
+			Address 1</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.Street_Address_1__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">First
+			Name</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.First_Name__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Street
+			Address 2</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.Street_Address_2__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Last
+			Name</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.Last_Name__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">City</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.City__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Email</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><span style="font-variant: normal"><font color="#006dcc"><span style="text-decoration: none"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">{!cand.Email__c}</span></span></span></span></font></font></span></font></span></span></p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">State/Province</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.State_Province__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Mobile</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.Mobile__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Zip/Postal
+			Code</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.Zip_Postal_Code__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Phone</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.Phone__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+		<td width="50%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Country</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.Country__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+	</tr>
+</tbody></table>
+
+<p><br/><br/></p>
+
+<table width="100%" cellpadding="4" cellspacing="0">
+	<colgroup><col width="256*"/>
+	</colgroup><tbody><tr>
+		<td width="100%" height="20" valign="top" style="border: 1px solid #000000; padding: 0.04in">
+			<p><font size="4" style="font-size: 16pt">Experience &amp;
+			Education</font></p>
+		</td>
+	</tr>
+</tbody></table>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<colgroup><col width="128*"/>
+	<col width="128*"/>
+	</colgroup><tbody><tr valign="top"> 
+		<td width="50%" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Education</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.Education__c} </span></span></span></span></font></font></font></span>
+			</p>
+		</td>
+		<td width="50%" style="border: 1px solid #000000; padding: 0.04in">
+			<p style="margin-bottom: 0in; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; orphans: 2; widows: 2">
+			<font color="#706e6b"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt">Years
+			of Experience</font></font></font></p>
+			<p style="orphans: 2; widows: 2"><span style="display: inline-block; border: none; padding: 0in"><font color="#2b2826"><font face="Salesforce Sans, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">{!cand.Years_of_Experience__c}</span></span></span></span></font></font></font></span></p>
+		</td>
+	</tr>
+</tbody></table>
+
+
+</body></html>
+<!--	<apex:pageBlock>
+        <apex:pageBlockSection title="General Information">
+			<apex:outputPanel>
+				Candidate Number <br/>
+				{!cand.Name} <br/><br/><br/>
+				First Name:		{!cand.First_Name__c}			<br/>
+				Last Name :		{!cand.Last_Name__c}<br/><br/>
+			</apex:outputPanel>
+		</apex:pageBlockSection>
+
+		<apex:pageBlockSection title="Contact Information">
+			<apex:outputPanel>
+				
+			    Street Address 1:	{!cand.Street_Address_1__c}		<br/>
+				Street Address 2:   {!cand.Street_Address_1__c}<br/><br/>
+				City:
+				State/Province:
+				Zip Code:
+				Country:
+				Email:  {!cand.Email__c}
+				Mobile:
+				Phone: 
+
+				
+			</apex:outputPanel>
+		</apex:pageBlockSection>
+
+
+			<HTML>
+			 <table>
+			 	<tr><th>First Name</th><th>Last Name</th></tr>
+				<tr><td>{!cand.First_Name__c}</td><td>{!cand.Last_Name__c}</td></tr>
+			 </table>
+			</HTML>
+
+    </apex:pageBlock>-->
+</apex:page>
